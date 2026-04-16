@@ -1,22 +1,14 @@
 {
-  "name": "jufofa",
+  "name": "hue-align",
+  "homepage": "https://gass-git.github.io/hue-align",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gass-git/jufofa.git"
-  },
   "author": "gass-git",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gass-git/jufofa/issues"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 \"src/index.html\" \"src/styles.css\" \"src/inGame_images/**/*\" \"src/instructions_images/**/*\" \"src/offGame_images/**/*\" dist"
   },
-  "homepage": "https://github.com/gass-git/jufofa#readme",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "typescript": "^5.2.2"
   }
 }
